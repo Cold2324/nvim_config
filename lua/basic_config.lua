@@ -4,7 +4,7 @@ local opt = vim.opt
 opt.relativenumber = true
 
 --Mouse
-opt.mouse = a
+opt.mouse = 'a'
 
 -- Identacion a 2 espacios
 opt.tabstop = 2
