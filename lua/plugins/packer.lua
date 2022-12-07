@@ -22,8 +22,15 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   } 
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
+
+  -- File Tree
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+    'nvim-tree/nvim-web-devicons', -- optional, for file icons
+  },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
