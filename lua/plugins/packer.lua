@@ -11,9 +11,17 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+-------------------------------------------Plugins Are Here----------------------------------------
 return require('packer').startup(function(use)
+  -- Packer
   use 'wbthomason/packer.nvim'
-  -- My plugins here
+
+  -- Theme
+  use 'navarasu/onedark.nvim'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  } 
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
 
