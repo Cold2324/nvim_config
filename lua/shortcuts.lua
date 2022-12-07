@@ -16,4 +16,7 @@ end
 -- shortcuts
 nmap('<leader>w', ':w<CR>')
 nmap('<leader>q', ':q<CR>')
-nmap('<leader>e', ':NvimTreeToggle<CR>')
+
+-- Neotree
+nmap('<leader>e', ':NeoTreeFloat<CR>')
+nmap('<leader>c', ':NeoTreeClose<CR>')

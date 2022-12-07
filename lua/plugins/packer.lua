@@ -23,15 +23,22 @@ return require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   } 
 
-  -- File Tree
+  -- Utilities
   use {
-    'nvim-tree/nvim-tree.lua',
-    requires = {
-    'nvim-tree/nvim-web-devicons', -- optional, for file icons
-  },
-    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+	  "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
   }
 
+  -- File Tree
+  use {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = { 
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
