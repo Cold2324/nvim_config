@@ -24,11 +24,8 @@ return require('packer').startup(function(use)
   } 
 
   -- Utilities
-  use {
-	  "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
-  }
-
+  use "windwp/nvim-autopairs"
+  
   -- File Tree
   use {
     "nvim-neo-tree/neo-tree.nvim",
@@ -39,6 +36,7 @@ return require('packer').startup(function(use)
       "MunifTanjim/nui.nvim",
     }
   }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
