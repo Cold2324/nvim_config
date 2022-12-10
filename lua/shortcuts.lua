@@ -16,6 +16,12 @@ end
 -- shortcuts
 nmap('<leader>w', ':w<CR>')
 nmap('<leader>q', ':q<CR>')
+nmap('<leader>fi', '$')
+nmap('<leader>in', '0')
+nmap('<leader>t', 'ciw')
+map('v', '<', '<gv')
+map('v', '>', '>gv')
+nmap('<leader>v', ':vsplit<CR>')
 
 -- Neotree
 nmap('<leader>e', ':NeoTreeFloat<CR>')
