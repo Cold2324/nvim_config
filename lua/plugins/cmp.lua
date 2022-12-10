@@ -87,8 +87,17 @@ cmp.setup.cmdline({ '/', '?' }, {
 cmp.setup.cmdline(':', {
   mapping = cmp.mapping.preset.cmdline(),
   sources = cmp.config.sources({
-    { name = 'path' }
+    { name = 'path' },
+    { name = 'nvim_lsp' }
   }, {
     { name = 'cmdline' }
   })
 })
+
+-- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers.
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+-- The following example advertise capabilities to `clangd`.
+require'lspconfig'.clangd.setup {
+  capabilities = capabilities,
+}
