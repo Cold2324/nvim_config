@@ -19,3 +19,15 @@ lsp.sumneko_lua.setup {
 		},
   }
 }
+
+lsp.pyright.setup {
+	settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "off"
+      }
+    }
+	},
+}
+
+lsp.tsserver.setup {}
