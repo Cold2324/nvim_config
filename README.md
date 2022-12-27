@@ -34,3 +34,4 @@ nvim init.lua
 | [Colorful Winsep](https://github.com/nvim-zh/colorful-winsep.nvim) | A configurable color split line |
 | [Kommentary](https://github.com/b3nj5m1n/kommentary) | Commenting plugin written in Lua |
 | [Comment Box](https://github.com/LudoPinelli/comment-box.nvim) | Clarify and beautify your comments using boxes and lines |
+| [Alpha Dashboard](https://github.com/goolord/alpha-nvim) | A fast and highly customizable greeter like vim-startify/dashboard-nvim |
