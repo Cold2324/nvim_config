@@ -16,6 +16,8 @@ nvim init.lua
 > Note: Packer will be installed if you don't have it
 
 ## Plugins
+>You can find more plugins in this repository [awesome neovim](https://github.com/rockerBOO/awesome-neovim)
+
 | Plugins   | Description    |
 |--------------- | --------------- |
 | [Packer](https://github.com/wbthomason/packer.nvim)   | A use-package inspired plugin manager. Uses native packages, supports Luarocks dependencies, written in Lua, allows for expressive config.   |
