@@ -9,12 +9,18 @@ end
 
 local packer_bootstrap = ensure_packer()
 
--------------------------------------------Plugins Are Here----------------------------------
+--  +----------------------------------------------------------+
+--  |                     Plugins are Here                     |
+--  +----------------------------------------------------------+
 return require('packer').startup(function(use)
-  -- Packer
+--  +--------+
+--  | Packer |
+--  +--------+
   use 'wbthomason/packer.nvim'
 
-  -- Theme
+--  +-------+
+--  | Theme |
+--  +-------+
   use 'navarasu/onedark.nvim'
   use {
     'nvim-lualine/lualine.nvim',
@@ -22,10 +28,14 @@ return require('packer').startup(function(use)
   } 
   use 'nvim-tree/nvim-web-devicons'
 
-  -- Utilities
+--  +-----------+
+--  | Utilities |
+--  +-----------+
   use "windwp/nvim-autopairs"
-  
-  -- File Tree
+ 
+--  +---------+
+--  | Neotree |
+--  +---------+
   use {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
@@ -36,7 +46,9 @@ return require('packer').startup(function(use)
     }
   }
 
-  --Cmp plugins
+--  +---------------+
+--  | --Cmp plugins |
+--  +---------------+
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
@@ -45,17 +57,23 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
 
-  -- snippets
+--  +----------+
+--  | snippets |
+--  +----------+
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
-	-- LSP
+--  +-----+
+--  | LSP |
+--  +-----+
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/mason.nvim" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
 
-  -- Treesitter
+--  +--------------+
+--  | --Treesitter |
+--  +--------------+
   use {
       'nvim-treesitter/nvim-treesitter',
       run = function()
@@ -64,20 +82,35 @@ return require('packer').startup(function(use)
       end,
   }
 
+--  +------------------------+
+--  | Dependencie Management |
+--  +------------------------+
   use {
       "vuki656/package-info.nvim",
       requires = "MunifTanjim/nui.nvim",
   }
 
+--  +--------+
+--  | Indent |
+--  +--------+
   use "lukas-reineke/indent-blankline.nvim"
 
+--  +------------------+
+--  | Split and Window |
+--  +------------------+
   use {
     "nvim-zh/colorful-winsep.nvim",
   }
 
+--  +---------+
+--  | Comment |
+--  +---------+
   use 'b3nj5m1n/kommentary'
   use "LudoPinelli/comment-box.nvim"
 
+--  +-----------+
+--  | Dashboard |
+--  +-----------+
   use {
       "goolord/alpha-nvim";
       "nvim-tree/nvim-web-devicons";
