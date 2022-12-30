@@ -91,6 +91,11 @@ return require('packer').startup(function(use)
       end,
   }
 
+--  +------------+
+--  | Bufferline |
+--  +------------+
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
 --  +------------------------+
 --  | Dependencie Management |
 --  +------------------------+
