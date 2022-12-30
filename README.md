@@ -1,5 +1,6 @@
 <h1 align=center style="text-align: center;">
-  <img src="https://github.com/Cold2324/nvim_config/blob/main/Neovim%20Logo.png" width=80 height=100/>
+  <img src="https://github.com/Cold2324/nvim_config/blob/main/assets/Neovim%20Logo.png" width=80 height=100/>
+  <p>Neovim setup written in Lua</p>
 </h1>
 
 ## Dependencies
