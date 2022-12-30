@@ -47,3 +47,9 @@ nmap('<leader>box', ':CBacbox10<CR>')
 --  | Telescope |
 --  +-----------+
 nmap('<leader>ff', ':Telescope find_files<CR>')
+
+--  +------------+
+--  | Bufferline |
+--  +------------+
+nmap('<TAB>', ':bnext<CR>')
+nmap('<S-TAB>', ':bprevious<CR>')
