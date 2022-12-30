@@ -27,6 +27,8 @@ nmap('<leader>te', ':terminal ')
 nmap('<leader>v', ':vsplit<CR>')
 vmap('<', '<gv')
 vmap('>', '>gv')
+vmap('fi', '$')
+vmap('in', '0')
 
 --  +---------+
 --  | Neotree |
