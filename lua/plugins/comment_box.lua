@@ -1,4 +1,10 @@
-require('comment-box').setup {
+local status_ok, comment_box = pcall(require, 'comment-box')
+
+if not status_ok then
+  return
+end
+
+comment_box.setup {
 	doc_width = 80, -- width of the document
 	box_width = 60, -- width of the boxes
 	borders = { -- symbols used to draw a box

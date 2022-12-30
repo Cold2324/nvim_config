@@ -1,4 +1,10 @@
-require('package-info').setup {
+local status_ok, package_info = pcall(require, 'package-info')
+
+if not status_ok then
+  return
+end
+
+package_info.setup {
   {
       colors = {
           up_to_date = "237", -- cterm Grey237

@@ -1,4 +1,10 @@
-require("colorful-winsep").setup({
+local status_ok, colorful = pcall(require, 'colorful-winsep')
+
+if not status_ok then
+  return
+end
+
+colorful.setup({
   -- highlight for Window separator
   highlight = {
     bg = "#16161E",
