@@ -1,26 +1,44 @@
 local opt = vim.opt
 
--- Numeros en la linea lateral
-opt.relativenumber = true
+--  +----------------------------------------------+
+--  | Allows neovim to access the system clipboard |
+--  +----------------------------------------------+
+opt.clipboard = "unnamedplus"
 
---Mouse
+--  +---------+
+--  | Numbers |
+--  +---------+
+opt.number = true
+
+--  +--------------------------------------+
+--  | Allow the mouse to be used in neovim |
+--  +--------------------------------------+
 opt.mouse = 'a'
 
--- Identacion a 2 espacios
+--  +------------+
+--  | Identation |
+--  +------------+
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.softtabstop = 2
 opt.expandtab = true
 opt.shiftround = true
-opt.expandtab = true -- Se va a insertar espacios en lugar de <Tab>s
+opt.expandtab = true
+opt.smartindent = true
 
--- Syntax
+--  +--------+
+--  | Syntax |
+--  +--------+
 opt.syntax = 'enable'
 
--- Terminal UI
+--  +-------------+
+--  | Terminal UI |
+--  +-------------+
 opt.termguicolors = true
 
--- Funcion de busqueda
+--  +------------------+
+--  | Search Functions |
+--  +------------------+
 opt.hlsearch = false
 opt.ignorecase = true
 opt.smartcase = true
