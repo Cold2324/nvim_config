@@ -6,7 +6,7 @@ sudo pacman -S neovim
 ```
 ## Usage
 ```bash
-git clone git@github.com:Killer2324/nvim_config.git
+git clone git@github.com:Cold2324/nvim_config.git
 mv nvim_config $HOME/.config/
 cd $HOME/.config
 mv nvim_config nvim
