@@ -38,3 +38,8 @@ nmap('<leader>c', ':NeoTreeClose<CR>')
 --  | Comment Box |
 --  +-------------+
 nmap('<leader>box', ':CBacbox10<CR>')
+
+--  +-----------+
+--  | Telescope |
+--  +-----------+
+nmap('<leader>ff', ':Telescope find_files<CR>')
