@@ -1,9 +1,22 @@
 # Nvim Lua Config
+
 ## Dependencies
-**NPM** is necesary for some servers
+**Npm** is necesary for some lsp servers
 ```bash
-sudo pacman -S neovim
+# xsel is for have support to copy/paste
+sudo pacman -S neovim xsel
 ```
+
+Neovim python support
+```bash
+pip install pynvim
+```
+
+Neovim node support (optional)
+```bash
+npm i -g neovim
+```
+
 ## Usage
 ```bash
 git clone git@github.com:Cold2324/nvim_config.git
@@ -36,4 +49,5 @@ nvim init.lua
 | [Colorful Winsep](https://github.com/nvim-zh/colorful-winsep.nvim) | A configurable color split line |
 | [Kommentary](https://github.com/b3nj5m1n/kommentary) | Commenting plugin written in Lua |
 | [Comment Box](https://github.com/LudoPinelli/comment-box.nvim) | Clarify and beautify your comments using boxes and lines |
-| [Alpha Dashboard](https://github.com/goolord/alpha-nvim) | A fast and highly customizable greeter like vim-startify/dashboard-nvim |
+| [Telescope](https://github.com/nvim-telescope/telescope.nvim) | Telescope.nvim is a highly extendable fuzzy finder over lists. Built on the latest awesome features from Neovim core. Telescope is centered around modularity, allowing for easy customization | 
+| [Dashboard Nvim](https://github.com/glepnir/dashboard-nvim) | A minimalist dashboard, inspired by doom-emacs |
