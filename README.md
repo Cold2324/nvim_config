@@ -1,4 +1,6 @@
-# Nvim Lua Config
+<h1 align=center style="text-align: center;">
+  <img src="https://github.com/Cold2324/nvim_config/blob/main/Neovim%20Logo.png" width=80 height=100/>
+</h1>
 
 ## Dependencies
 **Npm** is necesary for some lsp servers
