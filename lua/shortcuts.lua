@@ -53,3 +53,8 @@ nmap('<leader>ff', ':Telescope find_files<CR>')
 --  +------------+
 nmap('<TAB>', ':bnext<CR>')
 nmap('<S-TAB>', ':bprevious<CR>')
+
+--  +------------+
+--  | Toggleterm |
+--  +------------+
+nmap('<leader>te', ':ToggleTerm<CR>')

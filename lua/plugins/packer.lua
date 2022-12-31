@@ -122,6 +122,13 @@ return require('packer').startup(function(use)
   use 'b3nj5m1n/kommentary'
   use "LudoPinelli/comment-box.nvim"
 
+--  +------------+
+--  | Toggleterm |
+--  +------------+
+  use {
+    "akinsho/toggleterm.nvim", tag = '*'
+  }
+
 --  +-----------+
 --  | Dashboard |
 --  +-----------+
